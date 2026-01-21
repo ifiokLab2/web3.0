@@ -1,7 +1,8 @@
+
 {
   "version": 2,
   "routes": [
-    { "src": "/assets/(.*)", "dest": "/assets/$1" },
-    { "src": "/(.*)", "dest": "/index.html" }
+    { "src": "^/assets/(.*)", "dest": "/assets/$1" },
+    { "src": "^(?!/assets/).*", "dest": "/index.html" }
   ]
 }
